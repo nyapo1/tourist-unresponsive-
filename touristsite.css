@@ -1,0 +1,434 @@
+*{
+  margin: 0;
+}
+
+body{
+  height: 5000px;
+  margin-bottom: 10rem;
+  
+}
+header{
+background-image: url('https://images.pexels.com/photos/20888052/pexels-photo-20888052/free-photo-of-sunset-in-zurich.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+height: 110vh;
+position: relative;
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 7px;
+  height: 4rem;
+  align-items: center;
+  position: fixed;
+  margin: 2rem 2rem 2rem 0;
+  left: 1rem;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+ul {
+list-style: none;
+}
+
+ul li {
+  display: inline;
+  transition: all 0.3s ease;
+  
+}
+ul li:hover {
+  border-bottom:2px solid whitesmoke;
+  
+}
+
+ul li a{
+  text-decoration: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+ul button{
+  margin-right: 2rem;
+  padding: 5px 7px;
+  background: transparent;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  border: 2px solid white;
+  border-radius: 1.4rem;
+  cursor: pointer;
+}
+
+ul button:hover{
+  background:white;
+  color: rgba(0, 0, 0);
+}
+
+header main{
+  position: absolute;
+  margin-top: 8rem;
+  margin-left: 20vw;
+  padding: 4rem;
+}
+
+header main h1{
+  font-size: 3.5rem;
+  color: white;
+}
+header main .headings{
+animation: headingsAnimation 2.5s ease-in-out ;
+}
+
+@keyframes headingsAnimation{
+  0% {
+    transform: translateX(-25vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+}
+
+
+.primary-headings{
+position: absolute;
+margin-left:20vw;
+}
+
+.main-paragraph{
+  position: absolute;
+  margin-top:5rem;
+  color: antiquewhite;
+  font-size: 2rem;
+}
+
+
+
+
+.main-body{
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  /* margin-left: 5%; */
+
+}
+
+.company-qualities{
+  height: 70vh;
+  width: 25vw;
+  border: 1px solid rgb(136, 131, 131);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.company-qualities:hover{
+  transform: scale(1.1);
+}
+
+.main-body h2{
+  margin: 0;
+}
+
+.main-body p{
+  font-size: 1.4rem;
+  margin-top:10px;
+  bottom: 5px;
+  overflow: hidden;
+}
+
+.intro-image{
+  height:15rem;
+  width: 17rem;
+}
+
+.intro-title{
+  margin-top: 4rem;
+}
+
+.destination-main-title{
+  margin-left: 45%;
+  margin-bottom: 4rem;
+}
+
+.first-two{
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  margin-bottom: 3%;
+}
+
+.first-destination{
+  background-image: url('https://plus.unsplash.com/premium_photo-1686741733157-1d7863a7a04e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+}
+.second-destination{
+  background-image: url('https://images.unsplash.com/photo-1717733370413-77a15c716ebb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  margin-right: 15px;
+}
+
+.third-destination{
+  background-image: url('https://images.unsplash.com/photo-1594471034883-f65c832eeb50?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: top;
+  margin-right: 1rem;
+}
+.fourth-destination{
+    background-image: url('https://images.unsplash.com/photo-1491884662610-dfcd28f30cfb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: top;
+}
+.fifth-destination{
+  background-image: url('https://plus.unsplash.com/premium_photo-1686824684855-d389a22f762a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.sixth-destination{
+  background-image: url('https://images.unsplash.com/photo-1580644905998-317e6a29f1cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.first-destination,
+.second-destination,
+.third-destination,
+.fourth-destination,
+.fifth-destination,
+.sixth-destination{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:70vh;
+  border-radius: 15px;
+  /* margin-left: 3vw; */
+  position: relative;
+}
+
+.green,
+.skylight,
+.archives,
+.beach,
+.forest,
+.hills{
+  color: whitesmoke;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  font-weight: bold;
+}
+.green{
+  color: purple;
+}
+
+.beach{
+  color: darkolivegreen;
+}
+
+.last-three{
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 1rem;
+}
+
+.explanation{
+  font-size: 1.5rem;
+  padding: 5px 1rem;
+  /* margin-left: 3vw; */
+  margin-bottom: 2rem;
+
+}
+
+.destination-title{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-left: 30%;
+}
+
+.hidden{
+  display:none;
+}
+
+.toogle-button{
+  border: 3px solid purple;
+  color: purple;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  height:2rem;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-weight: bold;
+}
+.toogle-button:hover{
+  background:purple;
+  color: whitesmoke;
+}
+.destination-container{
+  border: 1px solid rgb(126, 123, 123);
+  border-radius: 15px;
+  margin-left: 3vw;
+  padding: 1rem 1rem;
+  margin-right: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.destination-container:hover{
+ box-shadow: 10px 20px 30px -5px rgba(0, 0, 0, 0.5);
+ border: 2px solid rgb(80, 79, 79);
+}
+
+.Destinations{
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+.customer-adventure{
+  background-image: url('https://images.unsplash.com/photo-1718186001240-15ec57eb2473?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  height: 170vh;
+  border: 2px solid lightskyblue;
+  margin-top: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+.adventure-heading{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+.adventure-title{
+  border-bottom: 3px solid antiquewhite;
+}
+.adventure-explantion p{
+  position: absolute;
+  margin: 1rem 5rem;
+  color:#333333;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.customer-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 1rem 1rem;
+  height: 90vh;
+  width: 94vw;
+  margin:20%  10% 10% 3%;
+}
+
+.customer-details{
+  background:antiquewhite;
+  position: relative;
+  height: 50vh;
+  /* width: 33vw; */
+  border-radius:1rem;
+}
+
+.customer-picture{
+  height: 3rem;
+  width: 3rem;
+}
+
+.customer-picture img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  margin:1rem 2rem;
+  display: inline;
+
+}
+
+.customer-det{
+  margin-left: 30%;
+}
+
+.customer-name{
+  padding-top: 0;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 10px;
+}
+
+.customer-title{
+  display: flex;
+  align-items: top;
+}
+
+.customer-hobby{
+  font-size: 1.3rem;
+}
+.customer-experience{
+  margin: 2rem ;
+  font-size: 1.4rem;
+}
+
+footer{
+  margin: 4rem 1rem;
+  height: 80vh;
+  background:rgba(15, 15, 53, 0.918);
+}
+
+.footer-main{
+display: grid;
+grid-template-columns: 1fr 3fr;
+margin-top: 5rem;
+}
+.first-footer{
+  margin: 5rem 2rem;
+}
+.second-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.travel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.travel h2{
+  margin-bottom: 2.5rem;
+  color: antiquewhite;
+}
+
+.travel p,
+.travel h3,
+.travel a{
+  margin-bottom:1.5rem ;
+  color: antiquewhite;
+}
+
+.travel p{
+  font-size: 1.1rem;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about h3{
+  margin-bottom: 2.5rem;
+  color: antiquewhite;
+}
+.about p{
+  margin-bottom: 1.5rem;
+  color: antiquewhite;
+  font-size: 1.1rem;
+}
